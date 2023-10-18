@@ -18,3 +18,17 @@ EメールでchatGPT APIのレスポンスを受け取れます。
 
 付記：
 GoogleAppScriptでも似たようなものが作れそうかな。
+
+
+
+Receive responses from the chatGPT API via email. This is a sample code where if you send an email to the address set in the code, you will receive a reply from chatGPT via email.
+
+Usage
+Prepare a dedicated email address and mail server to receive requests for chatGPT.
+Fill in your OpenAI API key, email address, and mail server settings in main.py.
+Run the program.
+Send an email with your request written in the body to the email address configured in the program.
+As long as the program is running, you'll get a reply.
+Note: The email check interval is set to 60 seconds. You can modify this by adjusting the checkTime variable.
+
+With access to email, you can now leverage chatGPT. The email implementation is compatible with IMAP servers. Please adjust the port number according to your server. Ensure you handle errors appropriately where necessary.

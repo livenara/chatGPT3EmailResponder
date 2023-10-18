@@ -10,7 +10,7 @@ from email.mime.multipart import MIMEMultipart
 import base64
 
 # API Settings
-openApiKey   = 'sk-XXXXXXXXXXXXXXXXXXXXXXX'
+openai.api_key = 'sk-XXXXXXXXXXXXXXXXXXXXXXX'
 
 # Mail Settings
 imapServer   = 'imap.server.jp' # do not support POP3.
@@ -55,8 +55,6 @@ class EmailClient:
         server.login(self.email, self.password)
         server.sendmail(self.email, to_email, msg.as_string())
         server.quit()
-
-openai.api_key = openApiKey
 
 email_client = EmailClient(imapServer, smtpServer, mailAddress, mailPassword)
 

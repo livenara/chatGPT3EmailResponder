@@ -1,0 +1,2 @@
+# chatGPT3EmailResponder
+EメールでchatGPT APIのレスポンスを受け取るやつ
